@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration form</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="container">
+            
+            <div class="signup-content">
+                <form method="POST" name="myform" id="signup-form" class="signup-form" onsubmit="return validate()">
+                    <h2>Sign up </h2>
+                    <p class="desc">Register For INNERVE Virtual Event 2020 <span>“HASH”</span></p>
+                    <div class="form-group">
+                        <input type="text" class="form-input" name="name" id="name" placeholder="Your Name"/>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" class="form-input" name="email" id="email" placeholder="Email" onblur="ValidateEmail()"/>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-input" name="number" id="number" placeholder="Phone Number " onblur="phonenumber()"/>
+
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-input" name="College" id="college" placeholder="College"/>
+                        
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                        <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="submit" id="submit" class="form-submit submit" value="Register" onclick="alert('form submited successfully')"/>
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    
+    <script src="java.js"></script>
+</body>
+</html>
